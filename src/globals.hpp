@@ -22,12 +22,25 @@ unsigned char colour_type; /* 0, 2, 3, 4, 6 */
 unsigned char filter;
 unsigned char frame_buffer;
 
+unsigned char alpha_table;
+
 /* Actions */
 std::string azAction[] {
-	"composite" 
+	"composite",
+	"indexing", /* for color */
+	"extraction", 
+	"pass",
+	"compress",
+	"deflate"
 };
 
 /* Actions */
 unsigned char deflate;
+unsigned char transformation; /* filter */
+unsigned char gamma; /* */
+
+unsigned char greyscale;
+unsigned char palette;
+unsigned char luminance;
 
 #endif

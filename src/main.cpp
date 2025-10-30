@@ -6,17 +6,6 @@
 
 using namespace std;
 
-#define PALETTE_ENTRY 255
-// Global Variables 
-short alpha; /* degree of opacity */
-short alpha_compaction;
-unsigned char alpha_separation;
-unsigned char alpha_table[PALETTE_ENTRY];
-/* */
-unsigned char bit_depth; /* 32 */
-unsigned char channel[5];
-/* */
-
 
 int read_next_chunk(std::ifstream& file) {
     /*============================================================
