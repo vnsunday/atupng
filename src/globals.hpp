@@ -31,7 +31,10 @@ std::string azAction[] {
 	"extraction", 
 	"pass",
 	"compress",
-	"deflate"
+	"deflate",
+	"encoding",
+	"decoding", 
+	"merging"
 };
 
 /* Actions */
@@ -42,5 +45,21 @@ unsigned char gamma; /* */
 unsigned char greyscale;
 unsigned char palette;
 unsigned char luminance;
+
+/* */
+unsigned char byte_order; /* MSB - LSB */
+unsigned char channels; /* MSB - LSB */
+unsigned char data_stream; 
+
+unsigned char editor; 
+unsigned char encoder;
+unsigned char decoder;
+
+unsigned char reference_image; /**/
+unsigned char white_point;
+
+/*=====  =====*/
+
+
 
 #endif
